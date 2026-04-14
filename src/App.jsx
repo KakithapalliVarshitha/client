@@ -8,7 +8,7 @@ function App() {
 
  const fetchStatus = async () => {
   try {
-    const res = await fetch("http://localhost:5000/api/status");
+    const res = await fetch("https://server-sigma-teal-92.vercel.app/api/status");
     const result = await res.json();
 
     const formattedDate = new Date(result.lastUpdated).toLocaleString(
