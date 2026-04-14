@@ -46,11 +46,14 @@ function App() {
       <h2>CI/CD PRACTICE DASHBOARD</h2>
 
       <div className="status-box">
-        <p><strong>Backend Status:</strong> {status}</p>
-        <p><strong>Mark Down Text: </strong>varshitha</p>
+        <p>
+          <span className={`status-indicator ${status === 'UP' ? 'status-up' : 'status-down'}`}></span>
+          <strong>Backend Status:</strong> {status}
+        </p>
+        <p><strong>Last Updated:</strong> {lastUpdated}</p>
       </div>
 
-      <button onClick={fetchData}>Fetch Data</button>
+      <button onClick={fetchData}>Fetch Employee Data</button>
 
       {data.length > 0 && (
         <table>
