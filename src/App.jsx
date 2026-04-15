@@ -32,7 +32,7 @@ function App() {
 
 
   const fetchData = async () => {
-    const res = await fetch("https://az-backend-puce.vercel.app/api/employees");
+    const res = await fetch("https://server-sigma-teal-92.vercel.app/api/employees");
     const result = await res.json();
     setData(result);
   };
@@ -43,7 +43,7 @@ function App() {
 
   return (
     <div className="container">
-      <h2>CI/CD PRACTICE DASHBOARD</h2>
+      <h2>CI/CD PRACTICE DASHBOARD VARSHITHA</h2>
 
       <div className="status-box">
         <p>
